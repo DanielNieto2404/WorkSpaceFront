@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My first form</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>About You</legend>
+      <p>
+        <label for="name">First Name:</label>
+        <input minlength="3" maxlength="50" type="text" name="name" id="name">
+      </p>
+      <p>
+        <label for="lastName">Last Name:</label>
+        <input minlength="3" maxlength="50" type="text" name="lastName" id="lastName">
+      </p>
+      <p>
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" name="birthDate" id="birthDate">
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Favorites codes</legend>
+      <p>
+        <input type="checkbox" name="javascript" id="javascript" value="Javascript">
+        <label for="javascript">Javascript</label>
+      </p>
+      <p>
+        <input type="checkbox" name="node" id="node" value="Node">
+        <label for="node">Node</label>
+      </p>
+      <p>
+        <input type="checkbox" name="php" id="php" value="PHP">
+        <label for="php">PHP</label>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Favorite IDE</legend>
+      <p>
+        <input type="radio" name="ide" id="ide1" value="IntellJ">
+        <label for="ide1">IntellJ</label>
+      </p>
+      <p>
+        <input type="radio" name="ide" id="ide2" value="Visual Studio Code">
+        <label for="ide2">Visual Studio Code</label>
+      </p>
+      <p>
+        <input type="radio" name="ide" id="ide3" value="Atom">
+        <label for="ide3">Atom</label>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Favorite Mobile OS</legend>
+      <p>
+        <input type="radio" name="mobile" id="mobile1" value="Android">
+        <label for="mobile1">Android</label>
+      </p>
+      <p>
+        <input type="radio" name="mobile" id="mobile2" value="iOS">
+        <label for="mobile2">iOS</label>
+      </p>
+    </fieldset>
+    <p>
+      <label for="comments">Comments:</label>
+      <textarea id="comments"></textarea>
+    </p>
+    <p>
+      <label for="disabled">Disabled:</label>
+      <input type="text" disabled name="disabled_value" id="disabled" value="disabled value">
+    </p>
+    <p>
+      <button type="reset">Reset</button>
+      <button type="submit">Send</button>
+    </p>
+    <input type="hidden" name="other" value="hidden value">
+  </form>
+</body>
+</html>

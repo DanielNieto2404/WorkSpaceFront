@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Other embedding technologies</title>
+</head>
+<body>
+    <h1>Other embedding technologies</h1>
+
+    <h2>Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Google Maps</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.3844097565!2d-3.8196199330199003!3d40.43813107992041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1576097543995!5m2!1ses!2ses"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+    <h2>Web site</h2>
+    <iframe src="https://en.wikipedia.org/wiki/Example.com"
+            width="100%" height="500" frameborder="0"
+            allowfullscreen>
+        <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Glossary">
+                Fallback link for browsers that don't support iframes
+            </a>
+        </p>
+    </iframe>
+
+    <h2>Flash</h2>
+    <embed src="whoosh.swf" quality="medium"
+           bgcolor="#ffffff" width="550" height="400"
+           name="whoosh" align="middle" allowScriptAccess="sameDomain"
+           allowFullScreen="false" type="application/x-shockwave-flash"
+           pluginspage="http://www.macromedia.com/go/getflashplayer">
+
+    <h2>PDF</h2>
+    <object data="mypdf.pdf" type="application/pdf"
+            width="800" height="1200" typemustmatch>
+        <p>You don't have a PDF plugin, but you can
+            <a href="mypdf.pdf">download the PDF file.
+            </a>
+        </p>
+    </object>
+
+    <h2>Image</h2>
+    <object data="dinosaur.jpg" type="image/jpeg" width="400" height="341" typemustmatch>
+        <p>Why oh why didn't we just use the image element?</p>
+    </object>
+</body>
+</html>
